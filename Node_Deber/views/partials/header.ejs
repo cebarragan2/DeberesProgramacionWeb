@@ -1,0 +1,31 @@
+  <div class="container-fluid py-2 text-center">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand text-success " href="#"><h1><strong>Plantillas Node.js</strong><h1></a>
+    </nav>
+  </div>
+
+  <div class="container ">
+    <div class="card  ">
+        <div class="card-body bg-light">
+            <div class="text-center ">
+                <h2 class="text-primary"> <strong>Variable</strong></h2>
+            <p class="text-dark"><%= tagline %></p>
+            </div>
+            
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-11">
+                    <h2><strong>Loop</strong></h2>
+                    <ul>
+                        <% drinks.forEach(function(drink) { %>
+                            <li>
+                                <%= drink.name %> - <%= drink.drunkness %>
+                            </li>   
+                        <% }); %>
+                    </ul>
+                </div>
+               
+            </div>
+        </div>
+      </div>
+  </div>
